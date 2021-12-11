@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome, Login to Doostudy</title>
+    <link rel="stylesheet" href="Doostudylogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="Doostudysolidlogo.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <img src="Doostudybiglogo.png" alt="Doostudy">
+        <form action="home-doostudy.php" method="post" id="login-form">
+            <input type="email" placeholder="enter username..." name="loggeduname">
+            <input type="password" placeholder="enter password..." name="loggedpsswd">
+            <input type="submit">
+            <p> <a href="">forgot password?</p></a>
+        </form>    
+    </nav>
+    <div class="extra-text">
+        <h2>Recent Login</h2>
+         <p>tap on profile pichure or click on login button</p>
+    </div>
+    <div class="recent-login-block">
+        <div class="recent-login recent-login1"> 
+            <span class="material-icons" style="color:#4d4d4d;margin:3px;padding:5px;height:15px;width:15px;background-color:#808080;font-size:15px;font-weight:bold;border-radius:50%;cursor:pointer;" onclick="RemoveRecentlogin()" id="RemoveRecentloginid">
+                close
+                </span>
+            <img src="beekei.jpg" alt="user's pichure" height="50px" width="50px">
+            <p>Bhupendra Patel</p>
+            <button onclick="">Login</button>
+        </div>
+        <div class="recent-login recent-login2" onclick="recentLogged()">  
+            <i class="material-icons" style="color: green;font-weight: bold;font-size: 60px;margin: 65px 52px;">control_point</i>
+        </div> 
+    </div>
+    <div class="sign-up-form">
+        <h3>
+            Hey there! , sign-up now
+        </h3>
+        <p>
+            join now, start asking QnA, discuss ideas, doo with Quality Mentors
+        </p>
+        <form action="home-doostudy.php" method="post" name="sign-up-form" id="sign-up-form-main">
+            <input type="text" name="firstname" id="firstname" placeholder="first name" required>
+            <input type="text" name="lastname" id="lastname" placeholder="surname" required>
+            <input type="email" name="email" id="email" placeholder="email" required>
+            <input type="number" name="phonenumber" id="phonenumber" placeholder="phone number" required> <br>
+                                   <label for="gender">Gender</label> <br>
+                                    <input type="radio" name="gender" id="gender" required>
+                                    <label for="Male">Male</label>
+                                    <input type="radio" name="gender" id="gender" required>
+                                    <label for="Female">Female</label>
+                                    <input type="radio" name="gender" id="gender" required>
+                                    <label for="Other">Other</label> <br>
+                                    <label for="dob">Date of birthday</label>
+                                     <br>
+                                    <select name="dob" id="dob" required>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="10">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <select name="dob" id="month" required>
+                                        <option value="january">january</option>
+                                        <option value="febuary">febuary</option>
+                                        <option value="march">march</option>
+                                        <option value="april">april</option>
+                                        <option value="may">may</option>
+                                        <option value="june">june</option>
+                                        <option value="july">july</option>
+                                        <option value="august">august</option>
+                                        <option value="september">september</option>
+                                        <option value="october">october</option>
+                                        <option value="november">november</option>
+                                        <option value="december">december</option>
+                                    </select>
+                                    <select name="dob" id="year" required>
+                                    <option value="1980">1980</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                </select>
+            <input type="password" name="password" id="password" placeholder="new password" required>
+            <input type="text" name="confirmpass" placeholder="confirm password">
+            <p>by clicking you agree to <a href="" style="text-decoration: none;"
+            >our terms and condition</a></p>
+            <input type="submit">
+        </form>
+    </div> 
+   <footer>
+       <p>
+           <span style="color:#808080;">Choose languages: </span><a href="">English(UK) </a><a href="">Hindi </a><a href="">Marathi </a><a href="">Bengali </a> <a href="">
+               Chattisgarhi </a> <a href="">Gujrati </a><a href="">Bagheli </a> <a href="">
+                   <i class="material-icons" style="color: #808080;font-size:20px;" onclick="ShowMoreLang()">control_point</i></a>
+       </p><p id="more-language" style="word-spacing: 5px;">
+           <a href="">French </a><a href="">Arabic </a><a href="">Spanish </a><a href="">Italian </a><a href="">Portuguese </a><a href="">Japanese</a>
+           <a href="">Korean </a><a href="">Dutch </a><a href="">Greek <br></a><a href="">Abele </a><a href="">Afade </a><a href="">Azwebaijani </a>
+           <a href="">Babine <br></a><a href="">Baki </a><a href="">Chinise </a><a href="">chewa </a><a href="">Fillipino </a>
+           <a href="">and more..</a>
+       </p>
+    <div class="doostudieslinks">
+    <h2><a href="">Doo's Links <i class="material-icons">&#xe157; </i></a></h2>
+    <a href="">  Doo's groups<i class="material-icons">group</i>   </a>
+    <a href="">Doo's QnA<i class="material-icons">&#xe6dd;</i>  </a>
+    <a href="">Doo's News Feed<i class="material-icons">&#xe226;</i> </a>
+    <a href="">Doo's Sharing<i class="material-icons">&#xe163;</i></a>
+    <a href="">Doo's Post Creation<i class="material-icons">&#xe150;</i> </a>
+    <a href="">Doo's Backup<i class="material-icons">&#xe864;</i> </a>
+    <a href="">Doo's Customization<i class="material-icons">&#xe869;</i> </a>
+    <a href="">Doo's Fav List<i class="material-icons">&#xe87e;</i></a> <br>
+    <a href="">Doo's cross messaging<i class="material-icons">&#xe0ca;</i></a>
+    <a href="">Doo's mailing<i class="material-icons">&#xe158;</i></a>
+    <a href="">Doo's Mentors<i class="material-icons">&#xe80c;</i></a>
+    <a href="">Doo's Campus<i class="material-icons">&#xeb3c;</i> </a>
+    <p>Doostudy&copy;2021</p>
+    </div>
+   </footer>
+   <script type="text/javascript" src="Doostudylogin.js"></script> 
+</body>
+</html>

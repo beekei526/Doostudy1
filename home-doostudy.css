@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#333333;
+}
+.header-main{
+    width: 100%;
+    height: 50px;
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+}
+.navbar-icon{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin: 0;
+}
+.mentor-icon{
+    width: 25%;
+    height: 50px;
+}
+.mentor-icon img{
+    height: 40px;
+    width: 40px;
+    margin: 5px 10px;
+}
+.searchwithdoostudy{
+    position: fixed;
+    top: 10px;
+    margin-left: 60px;
+    vertical-align: middle;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:#404040;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.25);
+}
+.searchbar{
+ display: flex;
+ align-items: center;
+ text-decoration: none;
+ margin-left: 1px;
+ margin-top: 3px;
+ color:  #cccccc;
+}
+.message-icon{
+    width: 25%;
+    height: 50px;
+    float: right;
+}
+.news-feed-icon{
+    width: 50%;
+    height: 50px;
+}
+.doostudy-main-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    gap: 0 0.625rem;
+}
+.mentor-profile{
+    width:25%;
+    height: 37.5rem;
+    position: fixed;
+    left: 0;
+    top:50px;
+    background-color: #333333;
+}
+@media (max-width: 1000px) {
+    .mentor-profile, .messagecomp{
+        display:none;
+    }
+}
+.news-feed{
+    width: 50%;
+    height: fit-content;
+    overflow-y: scroll;
+    background-color:#333333;
+    top: 50px;
+}
+.doo{
+    position: absolute;
+    top:250px;
+    left: 386px;
+    height: 200px;
+    width: 766px;
+    border-radius: 10px;
+    background-color: #4d4d4d;
+}
+.doo .doosinput{
+      margin: 10px 30px;
+}
+.doo input[type=text]{
+    margin-left: 10px;
+    width: 500px;
+    height: 50px;
+    background-color:  #737373;
+    border-radius: 30px;
+    border-style: none; 
+    cursor: pointer;
+    padding: 0;
+    border-style: none;
+    color: white;
+    font-size: 35px;
+}
+.doo hr{
+    height: 1px;
+    background-color:#737373;
+}
+.messagecomp{
+    width: 25%;
+    height: 37.5rem;
+    background-color:#333333;
+    position: fixed;
+    right: 0;
+    top: 50px;
+}
+.material-icons{
+    display: inline-block;
+}
+.mentor-icon ul{
+list-style: none;
+}
+.news-feed-icon{
+    display: flex;
+    align-items: center; 
+    margin-left: 1.79cm;
+}
+.news-feed-icon .news-feed-navbar-icons{
+    color: #bfbfbf;
+    display:flex;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    margin-right:10px;
+}
+.StoryComp{
+    position:absolute;
+    top: 55px;
+    left: 385px;
+    height: 180px;
+    width: 1000px;
+    background-color: #666666;
+}
+.StoryCompMain{
+    height: fit-content;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    align-items: center;
+    overflow-x: scroll;
+}
+.storybox{
+    height: 170px;
+    width: 130px;
+    background-color: blueviolet;
+}
+.HeaderMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    gap: 0 10px;
+    height: 190px;
+    width: 100%;
+    margin:5px 10px;
+  }
+  .HeaderMain::-webkit-scrollbar {
+    display: none;
+  }
+  .HeaderMain:hover::-webkit-scrollbar {
+    display:block;
+  }
+  .HeaderMain{
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  }
+  .HeaderMain:hover{
+    -ms-overflow-style: solid;
+    scrollbar-width: 10px; 
+    }
+  .headerIcon{
+          height: 170px;
+          width: 130px;
+          border-style:solid;
+          background-image: url(pradeeep01.jpeg);
+          border-radius: 15px;
+          text-align: center;
+         }
+    .addstory{
+        height: 170px;
+        width: 130px;
+        border-radius: 15px;
+        background-image: url(Addstory.png);
+        border-left: 5px solid #4CAF50;
+    }
+    .addstory .addstorytext{
+        font-size: 15px;
+        color: white;
+        margin:80% auto;
+    }
+  .headerIcon:hover{
+      box-shadow: 0 0 6px 3px rgba(0,0,0,0.3);
+  }
+  .headerIcon img{
+      width: 50px;
+      height:50px;
+      border-radius: 50%;
+      border-width: 3px;
+      border-style:solid;
+      border-color:#888;
+  }
+  .headerIcon p{
+    color:white;
+    font-weight:bold;
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-family: monospace;
+    margin:65% auto; 
+  }
+  #coloring{
+    border: 5px solid #888;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+  }
